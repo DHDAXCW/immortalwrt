@@ -34,5 +34,7 @@ platform_do_upgrade_emmc() {
 
 	dd if=/dev/zero of=$(find_mmc_part rootfs_data) bs=512 count=8
 
+	mkfs.ext4 -F -L rootfs_data $(find_mmc_part rootfs_data)
+
 	sleep 1
 }
