@@ -12,6 +12,8 @@ platform_check_image() {
 	globalscale,mochabin|\
 	iei,puzzle-m901|\
 	iei,puzzle-m902|\
+	qnap,qhora-321|\
+	qnap,qhora-322|\
 	marvell,armada8040-mcbin-doubleshot|\
 	marvell,armada8040-mcbin-singleshot|\
 	marvell,armada8040-clearfog-gt-8k|\
@@ -26,6 +28,8 @@ platform_check_image() {
 
 platform_do_upgrade() {
 	case "$(board_name)" in
+	qnap,qhora-321|\
+	qnap,qhora-322|\
 	iei,puzzle-m901|\
 	iei,puzzle-m902)
 		platform_do_upgrade_emmc "$1"
@@ -50,6 +54,8 @@ platform_copy_config() {
 	globalscale,mochabin|\
 	iei,puzzle-m901|\
 	iei,puzzle-m902|\
+	qnap,qhora-321|\
+	qnap,qhora-322|\
 	marvell,armada8040-mcbin-doubleshot|\
 	marvell,armada8040-mcbin-singleshot|\
 	marvell,armada8040-clearfog-gt-8k|\
