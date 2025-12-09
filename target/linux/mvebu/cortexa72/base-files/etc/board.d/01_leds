@@ -13,7 +13,7 @@ iei,puzzle-m901)
 	;;
 qnap,qhora-322|\
 iei,puzzle-m902)
-	ucidef_set_led_netdev "wan" "WAN" "white:network" "eth2" "link"
+	ucidef_set_led_netdev "wan" "WAN" "white:network" "br-wan" "link tx rx"
 	;;
 mikrotik,rb5009)
 	ucidef_set_led_netdev "sfp" "SFP" "green:sfp" "sfp"
